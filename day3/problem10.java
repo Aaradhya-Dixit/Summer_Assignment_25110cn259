@@ -16,8 +16,8 @@ public class problem10 {
                 }
             }
             if(c==2){
-                System.out.print(i);
-                System.out.println();
+                System.out.println(i);
+               
             }
         }
         sc.close();
