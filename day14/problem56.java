@@ -14,11 +14,12 @@ public class problem56 {
         for(int i = 0;i<size; i++) {
     for(int j = i + 1; j < size; j++) {
         if(a[i] == a[j]) {
-            System.out.println("Diplicate in array is "+a[i]);
+            System.out.println("Duplicate in array is "+a[i]);
             break;
         }
     }
 }
+sc.close();
 
     }
 }
