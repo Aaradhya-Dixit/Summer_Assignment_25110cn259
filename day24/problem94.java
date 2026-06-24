@@ -1,0 +1,34 @@
+package day24;
+
+import java.util.Scanner;
+
+public class problem94 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+
+        StringBuilder compressed = new StringBuilder();
+
+        int count = 1;
+
+        for (int i = 0; i < str.length() - 1; i++) {
+
+            if (str.charAt(i) == str.charAt(i + 1)) {
+                count++;
+            } else {
+                compressed.append(str.charAt(i));
+                compressed.append(count);
+                count = 1;
+            }
+        }
+
+        compressed.append(str.charAt(str.length() - 1));
+        compressed.append(count);
+
+        System.out.println(compressed);
+
+        sc.close();
+    }
+}
