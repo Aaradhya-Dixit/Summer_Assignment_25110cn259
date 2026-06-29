@@ -1,2 +1,0 @@
-# Summer_Assignment_25110cn259
-Summer assignment
